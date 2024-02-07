@@ -7,7 +7,7 @@
   <parent>
     <artifactId>keycloak-parent</artifactId>
     <groupId>org.keycloak</groupId>
-    <version>21.1.1</version>
+    <version>23.0.6</version>
   </parent>
 
   <groupId>io.github.yanfeiwuji</groupId>
@@ -16,12 +16,16 @@
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <justauth.version>1.16.5</justauth.version>
+    <justauth.version>1.16.6</justauth.version>
     <hutool.version>5.8.18</hutool.version>
   </properties>
 
   <dependencies>
-
+    <dependency>
+      <groupId>jakarta.ws.rs</groupId>
+      <artifactId>jakarta.ws.rs-api</artifactId>
+      <version>3.1.0</version>
+    </dependency>
     <dependency>
       <groupId>org.keycloak</groupId>
       <artifactId>keycloak-core</artifactId>
